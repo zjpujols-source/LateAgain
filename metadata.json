@@ -1,0 +1,8 @@
+{
+  "name": "Late Again | Official Site",
+  "description": "Official artist website for Late Again featuring music releases, music videos, store, and contact information.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
