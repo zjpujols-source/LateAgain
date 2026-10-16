@@ -226,7 +226,24 @@ export const defaultArtistConfig: ArtistConfig = {
     live: {
       enabled: true,
       title: "LIVE",
-      status: "coming_soon"
+      status: "active",
+      flyerUrl: "/tour-flyer.jpg",
+      tourDates: [
+        {
+          id: "gold-diggers-los-angeles-2026-10-28",
+          date: "OCTOBER 28, 2026",
+          doors: "7:00 PM",
+          city: "Los Angeles, CA",
+          venue: "Gold-Diggers",
+          address: "5632 Santa Monica Blvd, Los Angeles, CA 90038",
+          ticketUrl: "https://dice.fm/event/xe3are-vlsf-kcrw-presents-late-again-w-special-guests-jiwon-mirror-ball-veronicavon-28th-oct-gold-diggers-los-angeles-tickets",
+          price: "$19.57",
+          status: "on_sale",
+          presenter: "VLSF & KCRW Presents",
+          specialGuests: "JIWON • Mirror Ball • Veronicavon",
+          flyerUrl: "/tour-flyer.jpg"
+        }
+      ]
     },
 
     shop: {

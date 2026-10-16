@@ -46,6 +46,22 @@ export interface Release {
   youtubeUrl?: string;
 }
 
+export interface TourDate {
+  id: string;
+  date: string;
+  time?: string;
+  doors?: string;
+  city: string;
+  venue: string;
+  address?: string;
+  ticketUrl: string;
+  price?: string;
+  status?: 'on_sale' | 'sold_out' | 'free' | 'cancelled';
+  specialGuests?: string;
+  presenter?: string;
+  flyerUrl?: string;
+}
+
 export interface VideoItem {
   id: string;
   title: string;
@@ -88,6 +104,8 @@ export interface ArtistConfig {
       enabled: boolean;
       title: string;
       status: 'active' | 'coming_soon';
+      tourDates?: TourDate[];
+      flyerUrl?: string;
     };
 
     shop: {
