@@ -65,6 +65,17 @@ export const StreamModal: React.FC<StreamModalProps> = ({
     });
   }
 
+  if (release.soundcloudUrl) {
+    platforms.push({
+      name: 'SoundCloud',
+      url: release.soundcloudUrl,
+      iconBg: 'bg-[#FF5500] text-white',
+      textColor: 'text-white',
+      badge: 'Stream',
+      icon: <SoundCloudIcon className="w-5 h-5 fill-current" />,
+    });
+  }
+
   if (release.youtubeMusicUrl) {
     const ytUrl = release.youtubeMusicUrl;
     platforms.push({
@@ -77,9 +88,21 @@ export const StreamModal: React.FC<StreamModalProps> = ({
     });
   }
 
+  if (release.deezerUrl) {
+    const deezerUrl = release.deezerUrl;
+    platforms.push({
+      name: 'Deezer',
+      url: deezerUrl,
+      iconBg: 'bg-[#FEAA2D] text-black',
+      textColor: 'text-white',
+      badge: 'Stream',
+      icon: <DeezerIcon className="w-5 h-5 fill-current" />,
+    });
+  }
+
   if (release.youtubeUrl) {
     platforms.push({
-      name: 'YouTube Visualizer',
+      name: 'YouTube Video',
       url: release.youtubeUrl,
       iconBg: 'bg-[#FF0000] text-white',
       textColor: 'text-white',
@@ -100,18 +123,6 @@ export const StreamModal: React.FC<StreamModalProps> = ({
     });
   }
 
-  if (release.deezerUrl) {
-    const deezerUrl = release.deezerUrl;
-    platforms.push({
-      name: 'Deezer',
-      url: deezerUrl,
-      iconBg: 'bg-[#FEAA2D] text-black',
-      textColor: 'text-white',
-      badge: 'Stream',
-      icon: <DeezerIcon className="w-5 h-5 fill-current" />,
-    });
-  }
-
   if (release.tidalUrl) {
     const tidalUrl = release.tidalUrl;
     platforms.push({
@@ -121,17 +132,6 @@ export const StreamModal: React.FC<StreamModalProps> = ({
       textColor: 'text-white',
       badge: 'HiFi Stream',
       icon: <TidalIcon className="w-5 h-5 fill-current" />,
-    });
-  }
-
-  if (release.soundcloudUrl) {
-    platforms.push({
-      name: 'SoundCloud',
-      url: release.soundcloudUrl,
-      iconBg: 'bg-[#FF5500] text-white',
-      textColor: 'text-white',
-      badge: 'Stream',
-      icon: <SoundCloudIcon className="w-5 h-5 fill-current" />,
     });
   }
 
